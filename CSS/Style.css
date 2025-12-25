@@ -1,0 +1,194 @@
+:root{
+
+--header1: #E86A2D;
+--header2: #1D1320;
+--font1: white;
+--font2: black;
+--detalhes: #30656E;
+--ffont: "Koulen", sans-serif; font-weight: 400; font-style: normal;
+--ffont2: "Major Mono Display", monospace; font-weight: lighter; font-style: normal;
+--ffont3: "Lusitana", serif; font-weight: 400; font-style: normal;
+
+}
+
+* {
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body, html{
+
+width: 100dvw;
+height: 100dvh;
+
+}
+
+.circulo_direita{
+
+height: 100%;
+aspect-ratio: 1/2;
+background-color: var(--header2);
+border-bottom-right-radius: 100px;
+border-top-right-radius: 100px;
+
+}
+
+.circulo_esquerda{
+
+height: 100%;
+aspect-ratio: 1/2;
+background-color: var(--header2);
+border-bottom-left-radius: 200px;
+border-top-left-radius: 200px;
+
+}
+
+.circulo_baixo{
+
+width: 100%;
+height: 50%;
+background-color: var(--header2);
+border-bottom-left-radius: 500px;
+border-bottom-right-radius: 500px;
+
+}
+
+.circulo_topo{
+
+width: 100%;
+height: 50%;
+background-color: var(--header2);
+border-top-left-radius: 500px;
+border-top-right-radius: 500px;
+
+}
+
+.header{
+
+height: 24vh;
+width: 100vw;    
+background-color: var(--header1);
+display: grid;
+grid-template-columns: 76% 11.1% 12.9%;
+
+}
+
+#header_inicio{
+
+display: flex;
+align-items: center;
+width: 100%;
+height: 100%;
+
+}
+
+#header_fim{
+display: flex;
+}
+
+
+
+#menu{
+
+background-color: var(--font1);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#lista_menu{
+
+font-family: var(--ffont);
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+font-size: 25px;
+
+}
+
+.menu_link{
+
+width:100%;
+text-decoration: none;
+color: var(--header2);
+
+}
+
+#logo{
+
+width: 76%;
+height: 24%;
+position: absolute;
+color: var(--font1);
+z-index: 3;
+display:flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 64px;
+font-family: var(--ffont2);
+
+}
+
+#circulos_baixo{
+
+width: 17%;
+height: 100%;
+display: flex;
+flex-direction: column;
+
+}
+
+#circulos_topo{
+
+width: 17%;
+height: 100%;
+display: flex;
+flex-direction: column;
+
+}
+
+#conteudo{
+
+height: 76%;    
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+
+#descricao{
+
+width: 48%;
+font-family: var(--ffont3);
+font-size: 24px;
+text-align: justify;
+
+}
+
+#links{
+
+width: 47%;
+height: 6.4%
+
+}
+
+#acesso_links{
+
+width: 100%;
+display: flex;
+align-items:center;
+justify-content: space-between;
+font-family: var(--ffont);
+font-size: 25px;
+list-style: none;
+
+}
+
