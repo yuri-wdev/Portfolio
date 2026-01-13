@@ -1,3 +1,7 @@
+/* Configurações gerais */
+
+@import url(Pattern.css);
+
 :root{
 
 --header1: #E86A2D;
@@ -13,9 +17,9 @@
 
 * {
 
-box-sizing: border-box;
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 
 }
 
@@ -26,169 +30,349 @@ height: 100dvh;
 
 }
 
-.circulo_direita{
+body{
 
-height: 100%;
-aspect-ratio: 1/2;
-background-color: var(--header2);
-border-bottom-right-radius: 100px;
-border-top-right-radius: 100px;
+display: flex;
+flex-direction: column;
 
 }
 
-.circulo_esquerda{
+/* configuração setores de círculo */
 
-height: 100%;
-aspect-ratio: 1/2;
-background-color: var(--header2);
-border-bottom-left-radius: 200px;
-border-top-left-radius: 200px;
-
-}
-
-.circulo_baixo{
+.qt_circulo1{
 
 width: 100%;
-height: 50%;
+aspect-ratio: 1.03/1;
 background-color: var(--header2);
-border-bottom-left-radius: 500px;
-border-bottom-right-radius: 500px;
+border-radius: 100% 0 0 0;
+overflow: hidden; 
 
 }
 
-.circulo_topo{
+
+.qt_circulo2{
 
 width: 100%;
-height: 50%;
+aspect-ratio: 1.03/1;
 background-color: var(--header2);
-border-top-left-radius: 500px;
-border-top-right-radius: 500px;
+border-radius: 0 0 0 100%; 
+overflow: hidden;
 
 }
+
+.qt_circulo3{
+
+width: 100%;
+aspect-ratio: 1.03/1;
+background-color: var(--header2);
+border-radius: 0 0 100% 0; 
+overflow: hidden;
+
+}
+
+.qt_circulo4{
+
+width: 100%;
+aspect-ratio: 1.03/1;
+background-color: var(--header2);
+border-radius: 0  100% 0 0;
+overflow: hidden;
+
+}
+
+.qt_circulo22{
+
+width: 100%;
+height: 100%;
+background-color: var(--header2);
+border-radius: 0 0 0 100%; 
+overflow: hidden;
+}
+
+.qt_circulo11{
+
+width: 100%;
+height: 100%;
+background-color: var(--header2);
+border-radius: 100% 0 0 0; 
+overflow: hidden;
+}
+
+
+/* Início <header> */
+
 
 .header{
 
-height: 24vh;
-width: 100vw;    
 background-color: var(--header1);
 display: grid;
-grid-template-columns: 76% 11.1% 12.9%;
+grid-template-columns: 69.93% 15.07% 15%;
+width: 100%;
+height: 25%;
 
 }
 
 #header_inicio{
 
-display: flex;
-align-items: center;
 width: 100%;
 height: 100%;
-
-}
-
-#header_fim{
+overflow: hidden;
 display: flex;
+
 }
 
+.container_logo{
+
+width: 69.93%;
+height: 25%;
+position: absolute;
+display: flex;
+align-items:center;
+justify-content:center;
+
+
+}
+
+
+#logo{
+
+font-family: var(--ffont2);
+color: var(--font1);
+font-weight: lighter;
+text-align: center;
+font-size: 64px;
+position: absolute;
+z-index: 3;
+
+}
+
+.circulos{
+overflow: hidden;
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: repeat(10, auto);
+grid-template-rows: repeat(2, auto);
+
+
+}
 
 
 #menu{
-
+height: 100%;
+width: 100%;
 background-color: var(--font1);
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: nowrap;
+flex-shrink: 0;
+
+
+}
+
+.menu_botao{
+
+list-style: none;
+
 }
 
 #lista_menu{
 
-font-family: var(--ffont);
-list-style-type: none;
+width: 100%;
+height: 100%;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-align-items: center;
-font-size: 25px;
-
-}
-
-.menu_link{
-
-width:100%;
-text-decoration: none;
-color: var(--header2);
-
-}
-
-#logo{
-
-width: 76%;
-height: 24%;
-position: absolute;
-color: var(--font1);
-z-index: 3;
-display:flex;
 align-items: center;
 justify-content: center;
-text-align: center;
-font-size: 64px;
-font-family: var(--ffont2);
 
 }
 
-#circulos_baixo{
+.menu_link {
 
-width: 17%;
+width: 100%;
 height: 100%;
-display: flex;
-flex-direction: column;
+text-decoration: none;
+color: var(--header2);
+font-family: var(--ffont);
+font-size: 26px;
 
 }
 
-#circulos_topo{
+.decoracao_final{
 
-width: 17%;
+width:100%;
+height:100%;
+
+}
+
+.circulos_2{
+
+width: 100%;
 height: 100%;
-display: flex;
-flex-direction: column;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: 1.03fr 1.03fr;
 
 }
+
+
+
+/* Início <main> */
+
 
 #conteudo{
 
-height: 76%;    
+width:100%;
+height: 75%;
+display: grid;
+grid-template-columns: 48.47%;
+grid-template-rows: repeat(3, auto);
+align-items: center;
+justify-content: center;
+
+}
+
+#profile{
+width: 90.66%;
+height: 100%;
+display:flex;
+align-items: center;
+justify-content: center;
+object-fit: contain;
+
+}
+
+#container_logo{
+
+display:flex;
+align-items: center;
+justify-content:center;
+
+}
+
+
+#imgs{
 width: 100%;
 display: flex;
-flex-direction: column;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
+
+}
+
+#brush_art{
+
+width:100%;
+
+}
+
+#profile_img{
+
+width: 9rem;
+aspect-ratio: 1/1;
+object-fit:fill;   
+border-radius: 50%;
+border-color: var(--header1);
+border-style: solid;
+border-width: thin;
+position: absolute;
+z-index: 2;
+align-self: center;
 
 }
 
 #descricao{
 
-width: 48%;
-font-family: var(--ffont3);
-font-size: 24px;
-text-align: justify;
+display:flex;
+align-items: center;
+justify-content: center;
 
 }
 
-#links{
 
-width: 47%;
-height: 6.4%
+#descricao p{
+
+width: 100%;
+text-align: justify;
+font-size: 24px;
+font-family: var(--ffont3);
+
+}
+
+/* Links Rodapé */
+
+ #links{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
 
 }
 
 #acesso_links{
 
-width: 100%;
 display: flex;
+width: 80%;
 align-items:center;
 justify-content: space-between;
 font-family: var(--ffont);
-font-size: 25px;
-list-style: none;
+
 
 }
+
+#rodape{
+
+font-family: var(--ffont);
+list-style: none;
+display: flex;
+
+}
+
+.link_rodape1{
+
+display: flex;
+width: 50%;
+justify-content: flex-start;
+border: 0;
+background-color: var(--font1);
+font-family: var(--ffont);
+font-size: 22px;
+column-gap: 3%;
+
+}
+
+.link_rodape2{
+
+display: flex;
+width: 50%;
+justify-content: flex-end;
+border: 0;
+background-color: var(--font1);
+font-family: var(--ffont);
+font-size: 22px;
+column-gap: 3%;
+
+}
+
+.setas{
+
+color:var(--header1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

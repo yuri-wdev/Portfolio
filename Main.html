@@ -10,52 +10,66 @@
         @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
     </style>
     <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/Pattern.css">
     <title>Portfolio - Yuri</title>
 </head>
 
 <body>
     <header class="header">
-        <div id="header_inicio">
 
-            <h1 id="logo">
-                yuri aragão<br>Desenvolvedor Web
-            </h1>
-            <div class="circulo_esquerda"></div>
-            <section id="circulos_baixo">
-                <div class="circulo_baixo"></div>
-                <div class="circulo_baixo"></div>
-            </section>
-            <div class="circulo_direita"></div>
-            <div class="circulo_direita"></div>
-            <div class="circulo_esquerda"></div>
-            <div class="circulo_direita"></div>
-            <div class="circulo_esquerda"></div>
-            <div class="circulo_esquerda"></div>
-            <div class="circulo_esquerda"></div>
-            <section id="circulos_topo">
-                <div class="circulo_topo"></div>
-                <div class="circulo_topo"></div>
+        <div id="header_inicio">
+            <div class="container_logo">
+                <h1 id="logo">
+                    yuri aragão<br>Desenvolvedor Web
+                </h1>
+            </div>
+
+            <section class="circulos">
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo3"></div>
+
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo4"></div>
+
             </section>
 
         </div>
+
         <nav id="menu">
 
             <ol id="lista_menu">
-
                 <li class="menu_botao"><a href="#" class="menu_link">Currículo</a></li>
                 <li class="menu_botao"><a href="#" class="menu_link">Sobre</a></li>
                 <li class="menu_botao"><a href="#" class="menu_link">Projetos</a></li>
                 <li class="menu_botao"><a href="#" class="menu_link">Contato</a></li>
-
             </ol>
 
         </nav>
 
-        <div id="header_fim">
 
-            <div class="circulo_direita"></div>
-            <div class="circulo_esquerda"></div>
-
+        <div class="decoracao_final">
+            <section class="circulos_2">
+                <div class="qt_circulo22"></div>
+                <div class="qt_circulo22"></div>
+                <div class="qt_circulo11"></div>
+                <div class="qt_circulo22"></div>
+            </section>
         </div>
 
     </header>
@@ -63,26 +77,29 @@
     <main id="conteudo">
 
         <div id="profile">
-            <img src="Img/Vector 1 (1).png">
-            <img src="#">
+            <div id="imgs">
+                <img id="brush_art" src="Img/Vector 1 (1).png">
+                <img id="profile_img" src="Img/images.png">
+            </div>
         </div>
         <div id="descricao">
             <p>Sou um desenvolvedor fullstack com 1 ano de experiência freelancer. Trabalho desde o design do projeto à
                 programação back/front-end e conto com mais de 5 projetos construídos somente por mim.</p>
         </div>
         <div id="links">
-            <ol id="acesso_links">
-                <li>
-                    <a>
-                        < Trabalhos que realizo>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        < Tecnologias que utilizo>
-                    </a>
-                </li>
-            </ol>
+
+                <button class="link_rodape1">
+                    <p class="setas"><</p>
+                    <p>Trabalhos que realizo</p>
+                    <p class="setas">></p>
+                </button>
+
+                <button class="link_rodape2">
+                    <p class="setas"><</p>
+                    <p>Tecnologias que utilizo</p>
+                    <p class="setas">></p>
+                </button>
+
         </div>
     </main>
 </body>
