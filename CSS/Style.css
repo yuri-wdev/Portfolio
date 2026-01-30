@@ -42,7 +42,7 @@ flex-direction: column;
 .qt_circulo1{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 100% 0 0 0;
 overflow: hidden; 
@@ -53,7 +53,7 @@ overflow: hidden;
 .qt_circulo2{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 0 0 0 100%; 
 overflow: hidden;
@@ -63,7 +63,7 @@ overflow: hidden;
 .qt_circulo3{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 0 0 100% 0; 
 overflow: hidden;
@@ -73,7 +73,7 @@ overflow: hidden;
 .qt_circulo4{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 0  100% 0 0;
 overflow: hidden;
@@ -83,16 +83,17 @@ overflow: hidden;
 .qt_circulo22{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 0 0 0 100%; 
 overflow: hidden;
+
 }
 
 .qt_circulo11{
 
 width: 100%;
-height: 100%;
+height: auto;
 background-color: var(--header2);
 border-radius: 100% 0 0 0; 
 overflow: hidden;
@@ -108,8 +109,10 @@ background-color: var(--header1);
 display: grid;
 grid-template-columns: 69.93% 15.07% 15%;
 width: 100%;
-height: 25%;
+min-height: 25%;
+max-height: 26%;
 overflow: hidden;
+
 
 }
 
@@ -124,12 +127,13 @@ display: flex;
 
 .container_logo{
 
-width: 69.93%;
+width: 67%;
 height: 25%;
 position: absolute;
 display: flex;
 align-items:center;
 justify-content:center;
+object-fit: scale-down;
 
 
 }
@@ -141,7 +145,7 @@ font-family: var(--ffont2);
 color: var(--font1);
 font-weight: lighter;
 text-align: center;
-font-size: 350%;
+font-size: 3em;
 position: absolute;
 z-index: 3;
 
@@ -150,10 +154,9 @@ z-index: 3;
 .circulos{
 overflow: hidden;
 width: 100%;
-height: 100%;
+aspect-ratio: 1/1;
 display: grid;
-grid-template-columns: repeat(10, 10%);
-grid-template-rows: repeat(2, 50%);
+grid-template-columns: repeat(10, 1fr);
 
 
 }
@@ -235,20 +238,12 @@ justify-content: center;
 }
 
 #profile{
-width: 90.66%;
+width: 100%;
 height: 100%;
 display:flex;
 align-items: center;
 justify-content: center;
 object-fit: contain;
-
-}
-
-#container_logo{
-
-display:flex;
-align-items: center;
-justify-content:center;
 
 }
 
@@ -258,6 +253,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+position: relative;
 
 }
 
@@ -271,13 +267,11 @@ width:100%;
 
 width: 9rem;
 aspect-ratio: 1/1;
-object-fit:fill;   
+object-fit: fill;   
 border-radius: 50%;
 border-color: var(--header1);
 border-style: solid;
 border-width: thin;
-position: absolute;
-z-index: 2;
 align-self: center;
 
 }
@@ -295,7 +289,7 @@ justify-content: center;
 
 width: 100%;
 text-align: justify;
-font-size: 24px;
+font-size: 1.2rem;
 font-family: var(--ffont3);
 
 }
@@ -362,7 +356,103 @@ color:var(--header1);
 
 }
 
+@media(max-width: 1200px){
 
+body, html{
+
+width: 100%;
+height: 100%;
+
+}
+
+.header{
+
+width: 100%;
+height: 25%;
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr;
+
+}
+
+#logo{
+
+font-size: 150%;
+
+}
+
+
+#conteudo{
+
+width: 100%;
+height: 75%;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1.5fr 2fr 1fr;
+
+}
+
+#descricao p{
+
+width: 85%;
+height: 100%;
+
+}
+
+#profile{
+
+width: 100%;
+height: 100%;
+
+}
+
+.circulos{
+
+display: grid;
+grid-template-columns: repeat(5, auto);
+aspect-ratio: 1/1;
+
+}
+
+#links{
+
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+column-gap: 5%;
+
+}
+
+.link_rodape1{
+
+height: 50%;
+width: 100%;
+display: flex;
+align-items: inherit;
+justify-content: inherit;
+
+
+}
+
+.link_rodape2{
+
+height: 50%;
+width: 100%;
+display: flex;
+align-items: inherit;
+justify-content: inherit;
+
+}
+
+#profile_img{
+
+width: 35%;
+
+}
+
+}
 
 
 
