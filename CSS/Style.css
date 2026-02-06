@@ -107,7 +107,7 @@ overflow: hidden;
 
 background-color: var(--header1);
 display: grid;
-grid-template-columns: 69.93% 15.07% 15%;
+grid-template-columns: 5fr 1fr 1fr;
 width: 100%;
 min-height: 25%;
 max-height: 26%;
@@ -122,15 +122,17 @@ min-width: 100%;
 height: 100%;
 overflow: hidden;
 display: flex;
+position: relative;
 
 }
 
 .container_logo{
 
-width: 67%;
-height: 25%;
 position: absolute;
-display: flex;
+display: grid;
+grid-template-columns: inherit;
+height: 100%;
+width: 100%;
 align-items:center;
 justify-content:center;
 object-fit: scale-down;
@@ -145,8 +147,7 @@ font-family: var(--ffont2);
 color: var(--font1);
 font-weight: lighter;
 text-align: center;
-font-size: 60px;
-position: absolute;
+font-size: clamp(1.5rem, 10vh, 3em);
 z-index: 3;
 
 }
@@ -236,15 +237,18 @@ grid-template-rows: 1.03fr 1.03fr;
 width:100%;
 height: 75%;
 display: grid;
-grid-template-columns: 50%;
-grid-template-rows: 2fr 1fr 1fr;
+grid-template-columns: 1fr;
+grid-template-rows: 1.5fr 2fr 1fr;
 align-items: center;
 justify-content: center;
 
 }
 
 #profile{
-display:flex;
+
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
 align-items: center;
 justify-content: center;
 justify-self: center;
@@ -277,7 +281,8 @@ align-self: center;
 
 #descricao{
 
-display:flex;
+display:grid;
+grid-template-columns: 0.6fr;
 align-items: center;
 justify-content: center;
 
@@ -288,7 +293,7 @@ justify-content: center;
 
 width: 100%;
 text-align: justify;
-font-size: 1.2rem;
+font-size: clamp(1rem, 5vw, 1.5em);
 font-family: var(--ffont3);
 
 }
@@ -297,9 +302,13 @@ font-family: var(--ffont3);
 
  #links{
 
-display: flex;
+display: grid;
+width: 100%;
+height: 100%;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
+flex-direction: column;
+row-gap: 1.5%;
 
 
 }
@@ -315,37 +324,25 @@ font-family: var(--ffont);
 
 }
 
-#rodape{
-
-font-family: var(--ffont);
-list-style: none;
-display: flex;
-
-}
-
 .link_rodape1{
 
 display: flex;
-width: 50%;
-justify-content: flex-start;
 border: 0;
 background-color: var(--font1);
 font-family: var(--ffont);
-font-size: 22px;
-column-gap: 3%;
+font-size: clamp(0.5rem, 5vw, 1.5rem);
+align-self: center;
+justify-self: center;
 
 }
 
 .link_rodape2{
 
 display: flex;
-width: 50%;
-justify-content: flex-end;
 border: 0;
 background-color: var(--font1);
 font-family: var(--ffont);
-font-size: 22px;
-column-gap: 3%;
+font-size: clamp(0.5rem, 5vw, 1.5rem);
 
 }
 
@@ -393,14 +390,15 @@ grid-template-rows: 1.5fr 2fr 1fr;
 
 #descricao p{
 
-width: 85%;
+width: 100%;
 height: 100%;
 
 }
 
 .circulos{
 
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
 
 
 }
@@ -445,49 +443,82 @@ width: 70%;
 
 }
 
-@media(min-width: 550px) and (max-width: 750px){
+@media(min-width: 550px) and (max-width: 770px){
 
 .header{
 
 grid-template-columns: 3fr 1fr;
+
+}
+
+.circulos{
+
+grid-template-columns: repeat(5, 1fr);
+
+}
+
+}
+
+@media (min-width: 771px) and (max-width: 900px){
+
+.header{
+
+grid-template-columns: 3fr 1fr;
+
+}
+
+.circulos{
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+}
+
+}
+
+@media (min-width: 901px) and (max-width: 1000px){
+
+.header{
+
+grid-template-columns: 3fr 1fr;
+
+}
+
+#header_inicio{
+
+width: 100%;
+height: 100%;
+
+}
+
+.container_logo{
+
+width: 100%;
+height: 100%;
 
 }
 
 .circulos{
 
 grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(3, 1fr);
 
 }
 
 }
 
-@media (min-width: 751px) and (max-width: 900px){
+@media (min-width: 1001px) and (max-width: 1200px){
 
 .header{
 
-grid-template-columns: 3fr 1fr;
+grid-template-columns: 4fr 1fr;
 
 }
 
 .circulos{
 
-grid-template-columns: repeat(7, 1fr);
-
-}
-
-}
-
-@media (min-width: 901px) and (max-width: 1100px){
-
-.header{
-
-grid-template-columns: 3fr 1fr;
-
-}
-
-.circulos{
-
-grid-template-columns: repeat(9, 1fr);
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(2, 1fr);
 
 }
 
