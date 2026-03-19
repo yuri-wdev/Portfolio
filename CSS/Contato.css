@@ -26,13 +26,14 @@ align-items: end;
 
 .contorno {
 
-height: 35.84%;
+height: 6vw;
 aspect-ratio: 1/1;
 border: solid black;
 display: flex;
 align-items: center;
 justify-content: center;
 border-radius: 100px 100px 100px 100px;
+flex-shrink: 0;
 
 }
 
@@ -40,7 +41,7 @@ border-radius: 100px 100px 100px 100px;
 
 background-color: var(--cor2);
 width: 90%;
-aspect-ratio: 1/1;
+height: 90%;
 display: flex;
 align-content: center;
 justify-content: center;
@@ -53,12 +54,25 @@ object-fit: scale-down;
 
 background-color: var(--cor2);
 border: 0;
-border-radius: inherit;
-width: clamp(1rem, 4vw, 3rem);
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+border-radius: inherit;
+align-content: center;
+cursor: pointer;
 
+}
+
+.botao img{
+    width: 40%;
+    object-fit: contain;
+    display: block;
+
+}
+
+#gith{
+    width: 57%;
 }
 
 #Insta{
@@ -112,7 +126,7 @@ margin-top: 5%;
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1250px){
 
 
 .redes{
@@ -146,6 +160,10 @@ top: +15%;
 height: 15%;
 aspect-ratio: 1/1;
 
+}
+
+#gith{
+    width: 60%;
 }
 
 }
