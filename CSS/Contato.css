@@ -109,7 +109,7 @@ background-color: var(--header2);
 border-radius: 900px 900px 900px 900px;
 position: absolute;
 z-index: 2;
-top: 50%;
+top: 100%;
 display: flex;
 justify-content: center;
 align-items: flex-start;
@@ -123,6 +123,8 @@ aspect-ratio: 1/1;
 border-radius: inherit;
 background-color:var(--font1);
 margin-top: 5%;
+transform: rotate(1deg);
+
 
 }
 
