@@ -371,27 +371,85 @@ body {
 
 }
 
-#servicos{
+#servicos, #trabalhos{
     position: absolute;
     z-index: 3;
-    width: 95vw;
+    width: 80vw;
     height: 95vh;
-    background-color: #D9D9D9;
+    background-color: white;
     justify-self: center;
-    bottom: 2.5%
+    bottom: 2.5%;
+    border-radius: 20px;
+
 
 }
 
-#trabalhos{
-    position: absolute;
-    z-index: 3;
-    width: 95vw;
-    height: 95vh;
-    background-color: #D9D9D9;
+#cabecalho2{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    margin-bottom: 2%;
+}
+
+#botao_fechar{
+    background-color: var(--font1);
+    border: none;
+    width: 4%;
+    aspect-ratio: 1/1;
+    
+    justify-self: end;
+    object-fit: contain;
+    margin-right: 2%;
+}
+
+#resto{
+    height: 85%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.cards{
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    border: thin solid grey;
     justify-self: center;
-    bottom: 2.5%
+    border-radius: 20px;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.borda{
+    background-color: var(--header1);
+    width: 30%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tcab, #pcab{
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+
+
 
 
 

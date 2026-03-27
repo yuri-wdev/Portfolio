@@ -92,24 +92,87 @@
 
             <button onclick="abrirservicos()" class="link_rodape1">
                 <p class="setas">
-                    <</p>
+                    << /p>
                         <p>Trabalhos que realizo</p>
                         <p class="setas">></p>
             </button>
 
-            <button  onclick="abrirtrabalhos()" class="link_rodape2">
-                <p class="setas"><</p>
+            <button onclick="abrirtrabalhos()" class="link_rodape2">
+                <p class="setas">
+                    << /p>
                         <p> Tecnologias que utilizo </p>
                         <p class="setas">></p>
             </button>
 
         </div>
         <div style="display: none" id="servicos">
-            <button onclick="fecharservicos()">X</button>
+
+            <div id="fechar">
+                <button onclick="fecharservicos()">X</button>
+            </div>
+            <div id="tudo"></div>
+
+
         </div>
 
         <div style="display: none" id="trabalhos">
-            <button onclick="fechartrabalhos()">X</button>
+
+            <section id="cabecalho2">
+
+                <button id="botao_fechar" onclick="fechartrabalhos()"><img src="Img/close.png"></button>
+                <h1 id="tcab">Serviços<h1>
+                        <p id="pcab">O que posso fazer para você</p>
+
+            </section>
+
+            <section id="resto">
+
+                <div class="cards">
+                    <div class="icones">
+                        <div class="borda">
+                            <img src="Img/Globe.png">
+                        </div>
+                    </div>
+                    <div class="textos">
+                        <h3>Landing pages</h3>
+                        <p>Páginas assertivas desenvolvidas para atrair atenção e interesse de possíveis clientes.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="icones">
+                        <div class="borda">
+                            <img src="Img/Shopping cart.png">
+                        </div>
+                    </div>
+                    <div class="textos">
+                        <h3>E-commerce</h3>
+                        <p>Lojas on-line completas com design excepcional.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="icones">
+                        <div class="borda">
+                            <img src="Img/File text.png">
+                        </div>
+                    </div>
+                    <div class="textos">
+                        <h3>Sites informativos</h3>
+                        <p>Páginas coesas, focadas em transmitir suas mensagens e tópicos. </p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="icones">
+                        <div class="borda">
+                            <img src="Img/sticker.png">
+                        </div>
+                    </div>
+                    <div class="textos">
+                        <h3>Design personalizado</h3>
+                        <p>Características únicas para seu produto/website feitas por mim.</p>
+                    </div>
+                </div>
+
+            </section>
         </div>
     </main>
 

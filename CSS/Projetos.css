@@ -56,7 +56,7 @@ html {
     justify-content: space-around;
     align-items: center;
     font-family: var(--ffont);
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    font-size: clamp(1.2rem, 5vw, 2rem);
 
 }
 
@@ -64,8 +64,8 @@ html {
 
     font-family: var(--ffont);
     font-size: 30px;
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50% 50% 50% 50%;
     border: 0;
     display: flex;
@@ -129,7 +129,7 @@ html {
     aspect-ratio: 1/1;
     color: var(--font1);
     font-family: var(--ffont);
-    font-size: clamp(1.3rem, 5vw, 1.5rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
     z-index: 3;
     cursor: pointer;
 
@@ -205,7 +205,7 @@ html {
 
     .cor_interna p{
 
-        font-size: clamp(1.5rem, 3vw, 2rem)
+        font-size: clamp(1.5rem, 5vw, 2rem)
     }
 
     .cor_interna button{
