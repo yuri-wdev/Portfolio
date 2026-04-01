@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Major+Mono+Display&family=Momo+Trust+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+    </style>
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/Pattern.css">
+    <script defer src="JS/Sobre.js"></script>
+    <title>Portfolio - Yuri</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div id="header_inicio">
+            <div class="container_logo">
+                <h1 id="logo">
+                    yuri aragão<br>Desenvolvedor Web
+                </h1>
+            </div>
+
+            <section class="circulos">
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo3"></div>
+
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo3"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo2"></div>
+                <div class="qt_circulo1"></div>
+                <div class="qt_circulo4"></div>
+                <div class="qt_circulo4"></div>
+
+            </section>
+
+        </div>
+
+        <nav id="menu">
+
+            <ol id="lista_menu">
+                <li class="menu_botao"><a href="#" class="menu_link">Currículo</a></li>
+                <li class="menu_botao"><a style="color: #E86A2D" href="Main.html" class="menu_link">Sobre</a></li>
+                <li class="menu_botao"><a href="Projetos.html" class="menu_link">Projetos</a></li>
+                <li class="menu_botao"><a href="Contato.html" class="menu_link">Contato</a></li>
+            </ol>
+
+        </nav>
+
+
+        <div class="decoracao_final">
+            <section class="circulos_2">
+                <div class="qt_circulo22"></div>
+                <div class="qt_circulo22"></div>
+                <div class="qt_circulo11"></div>
+                <div class="qt_circulo22"></div>
+            </section>
+        </div>
+
+    </header>
+
+    <main id="conteudo">
+
+        <div id="profile">
+            <div id="imgs">
+                <img id="profile_img" src="Img/images.png">
+            </div>
+        </div>
+        <div id="descricao">
+            <p>Construo soluções digitais onde o design encontra a performance. Há um ano atuando como freelancer, me
+                especializei no desenvolvimento Fullstack. Com um histórico de mais de 5 projetos desenvolvidos
+                individualmente, minha missão é garantir que a estética e a lógica da programação caminhem juntas para
+                oferecer a melhor experiência ao usuário. </p>
+        </div>
+        <div id="links">
+
+            <button onclick="abrirservicos()" class="link_rodape1">
+                <p class="setas">
+                    << /p>
+                        <p>Trabalhos que realizo</p>
+                        <p class="setas">></p>
+            </button>
+
+            <button onclick="abrirtrabalhos()" class="link_rodape2">
+                <p class="setas">
+                    << /p>
+                        <p> Tecnologias que utilizo </p>
+                        <p class="setas">></p>
+            </button>
+
+        </div>
+
+
+        <div id="pop2" style="display: none;" class="overlay">
+            <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+
+                <button onclick="fecharservicos()" class="close-btn" aria-label="Fechar">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+
+                <div class="popup-header">
+                    <h2 id="popup-title">Serviços</h2>
+                    <p>O que eu posso lhe oferecer:</p>
+                </div>
+
+                <div class="services-list">
+
+                    <a class="service-card" href="#">
+                        <div class="icon-wrap">
+                            <!-- Globe icon -->
+                            <img src="Img/Globe.png">
+                        </div>
+                        <div class="service-info">
+                            <strong>Landing Pages</strong>
+                            <span>Páginas atraentes e focadas em capturar usuários/clientes.</span>
+                        </div>
+                    </a>
+
+                    <a class="service-card" href="#">
+                        <div class="icon-wrap">
+                            <!-- Shopping cart icon -->
+                            <img src="Img/Shopping cart.png">
+                        </div>
+                        <div class="service-info">
+                            <strong>E-Commerce</strong>
+                            <span>Lojas on-line completas, com segurança e confiabilidade.</span>
+                        </div>
+                    </a>
+
+                    <a class="service-card active" href="#">
+                        <div class="icon-wrap">
+                            <!-- File text icon -->
+                            <img src="Img/File text.png">
+                        </div>
+                        <div class="service-info">
+                            <strong>Sites informativos</strong>
+                            <span>Sites coesos e com foco em engajar e tirar dúvidas de usuários.</span>
+                        </div>
+                    </a>
+
+                    <a class="service-card" href="#">
+                        <div class="icon-wrap">
+                            <!-- Palette icon -->
+                            <img src="Img/sticker.png">
+                        </div>
+                        <div class="service-info">
+                            <strong>Design customizado</strong>
+                            <span>Designs construídos para formar ou complementar a identidade da sua marca.</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <button class="cta-btn">Entre em contato</button>
+
+            </div>
+        </div>
+        <div class="overlay2" id="overlay2">
+            <div class="popup2" role="dialog" aria-modal="true" aria-labelledby="tech-popup-title">
+                <button class="close-btn2" onclick="fechartrabalhos()" aria-label="Fechar">✕</button>
+                <h2 id="tech-popup-title">Tecnologias</h2>
+                <p class="subtitle2">Ferramentas, linguagens e frameworks que utilizo</p>
+                <div class="card2">
+                    <h3>Front-End: </h3>
+                    <div class="imgs2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                    </div>
+                </div>
+                <div class="card2">
+                    <h3>Back-End:</h3>
+                    <div class="imgs2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+</html>
