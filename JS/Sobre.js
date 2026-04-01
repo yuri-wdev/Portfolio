@@ -7,10 +7,10 @@ function fecharservicos(){
 }
 
 function abrirtrabalhos(){
-    document.getElementById().style.display = 'block';
+    document.getElementById('overlay2').style.display = 'block';
 }
 
 function fechartrabalhos(){
-    document.getElementById().style.display = 'none';
+    document.getElementById('overlay2').style.display = 'none';
 }
 
