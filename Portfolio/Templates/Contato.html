@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,8 +10,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
     </style>
-    <link rel="stylesheet" href="/CSS/Style.css">
-    <link rel="stylesheet" href="/CSS/Projetos.css">
+    <link rel="stylesheet" href="{% static 'Portfolio/CSS/Style.css' %}">
+    <link rel="stylesheet" href="{% static 'Portfolio/CSS/Contato.css' %}">
+    <script defer src="{% static 'Portfolio/JS/Contato.js' %}"></script>
     <title>Portfólio- Yuri</title>
 </head>
 
@@ -53,10 +55,10 @@
         <nav id="menu">
 
             <ol id="lista_menu">
-                <li class="menu_botao"><a href="#" class="menu_link">Currículo</a></li>
-                <li class="menu_botao"><a href="Main.html" class="menu_link">Sobre</a></li>
-                <li class="menu_botao"><a style="color: #E86A2D" href="Projetos.html" class="menu_link">Projetos</a></li>
-                <li class="menu_botao"><a href="Contato.html" class="menu_link">Contato</a></li>
+                <li class="menu_botao"><a target="_blank" href="https://drive.google.com/file/d/1zGCD4a0jt_SCY4wRTCrur9PDOVwP3vvo/view?usp=drive_link" class="menu_link">Currículo</a></li>
+                <li class="menu_botao"><a href="{% url 'Sobre' %}" class="menu_link">Sobre</a></li>
+                <li class="menu_botao"><a href="{% url 'Projetos' %}" class="menu_link">Projetos</a></li>
+                <li class="menu_botao"><a style="color: #E86A2D" href="{% url 'Contato' %}" class="menu_link">Contato</a></li>
             </ol>
 
         </nav>
@@ -73,46 +75,40 @@
 
     </header>
 
-    <main id="conteudo2">
-
-
-        <section id="circulo">
-
-            <div id="contorno_circulo">
-                <div id="circulo_laranja"></div>
+    <main class="conteudo3">
+        <nav class="redes">
+            <div class="contorno">
+                <div class="preenchimento">
+                    <button class="botao"><img src="{% static 'Portfolio/Images/WPP.png' %}"></button>
+                </div>
             </div>
-            
-
-        </section>
-
-        <section id="informacoes">
-
-            <div class="contorno_titulo" >
-
-                <div class="cor_interna">
-
-                    <button>
-                        <</button>
-                            <p>Projeto 1 - Nome do projeto</p>
-                            <button>></button>
-
+            <div id="Insta" class="contorno">
+                <div class="preenchimento">
+                    <button class="botao"><img src="{% static 'Portfolio/Images/Insta.png' %}"></button>
+                </div>
+            </div>
+            <div id="gmail" class="contorno">
+                <div class="preenchimento">
+                    <button class="botao"><img src="{% static 'Portfolio/Images/gmail.png' %}"></button>
+                </div>
+            </div>
+            <div id="Github" class="contorno">
+                <div class="preenchimento">
+                    <button class="botao"><img id="gith" src="{% static 'Portfolio/Images/github.png' %}"></button>
+                </div>
+            </div>
+            <div class="contorno">
+                <div class="preenchimento">
+                    <button class="botao"><img src="{% static 'Portfolio/Images/LinkedIn.png' %}"></button>
                 </div>
             </div>
 
-            </div>
-            <div class="contorno_descricao">
-
-                <div class="cor_interna2">descricao breve</div>
-
-            </div>
-
-            <div class="contorno_foto">
-                <img src="/Img/331288b95385a32cae23c50156c5ce62.jpg" id="foto">
-                <button id="ver_mais">+</button>
-            </div>
-
-        </section>
+        </nav>
+        <div id="revolving_circle">
+            <div id="circle"></div>
+        </div>
     </main>
+
 </body>
 
 </html>

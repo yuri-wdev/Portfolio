@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,9 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
     </style>
-    <link rel="stylesheet" href="/CSS/Style.css">
-    <link rel="stylesheet" href="/CSS/Pattern.css">
-    <script defer src="JS/Sobre.js"></script>
+    <link rel="stylesheet" href="{% static 'Portfolio/CSS/Style.css' %}">
+    <script defer src="{% static 'Portfolio/JS/Sobre.js' %}"></script>
     <title>Portfolio - Yuri</title>
 </head>
 
@@ -55,10 +55,10 @@
         <nav id="menu">
 
             <ol id="lista_menu">
-                <li class="menu_botao"><a href="#" class="menu_link">Currículo</a></li>
-                <li class="menu_botao"><a style="color: #E86A2D" href="Main.html" class="menu_link">Sobre</a></li>
-                <li class="menu_botao"><a href="Projetos.html" class="menu_link">Projetos</a></li>
-                <li class="menu_botao"><a href="Contato.html" class="menu_link">Contato</a></li>
+                <li class="menu_botao"><a target="_blank" href="https://drive.google.com/file/d/1zGCD4a0jt_SCY4wRTCrur9PDOVwP3vvo/view?usp=drive_link" class="menu_link">Currículo</a></li>
+                <li class="menu_botao"><a style="color: #E86A2D" href="{% url 'Sobre' %}" class="menu_link">Sobre</a></li>
+                <li class="menu_botao"><a href="{% url 'Projetos' %}" class="menu_link">Projetos</a></li>
+                <li class="menu_botao"><a href="{% url 'Contato' %}" class="menu_link">Contato</a></li>
             </ol>
 
         </nav>
@@ -79,7 +79,7 @@
 
         <div id="profile">
             <div id="imgs">
-                <img id="profile_img" src="Img/images.png">
+                <img id="profile_img" src="{% static 'Portfolio/Images/images.png' %}">
             </div>
         </div>
         <div id="descricao">
@@ -127,7 +127,7 @@
                     <a class="service-card" href="#">
                         <div class="icon-wrap">
                             <!-- Globe icon -->
-                            <img src="Img/Globe.png">
+                            <img src="{% static 'Portfolio/Images/Globe.png' %}">
                         </div>
                         <div class="service-info">
                             <strong>Landing Pages</strong>
@@ -138,7 +138,7 @@
                     <a class="service-card" href="#">
                         <div class="icon-wrap">
                             <!-- Shopping cart icon -->
-                            <img src="Img/Shopping cart.png">
+                            <img src="{% static 'Portfolio/Images/Shopping cart.png' %}">
                         </div>
                         <div class="service-info">
                             <strong>E-Commerce</strong>
@@ -149,7 +149,7 @@
                     <a class="service-card active" href="#">
                         <div class="icon-wrap">
                             <!-- File text icon -->
-                            <img src="Img/File text.png">
+                            <img src="{% static 'Portfolio/Images/File text.png' %}">
                         </div>
                         <div class="service-info">
                             <strong>Sites informativos</strong>
@@ -160,7 +160,7 @@
                     <a class="service-card" href="#">
                         <div class="icon-wrap">
                             <!-- Palette icon -->
-                            <img src="Img/sticker.png">
+                            <img src="{% static 'Portfolio/Images/sticker.png' %}">
                         </div>
                         <div class="service-info">
                             <strong>Design customizado</strong>
@@ -175,18 +175,31 @@
 
             </div>
         </div>
-        <div class="overlay2" id="overlay2">
+        <div style="display: none;" class="overlay2" id="overlay2">
             <div class="popup2" role="dialog" aria-modal="true" aria-labelledby="tech-popup-title">
                 <button class="close-btn2" onclick="fechartrabalhos()" aria-label="Fechar">✕</button>
-                <h2 id="tech-popup-title">Technologies</h2>
-                <p class="subtitle2">Tools &amp; frameworks I work with</p>
+                <h2 id="tech-popup-title">Tecnologias</h2>
+                <p class="subtitle2">Ferramentas, linguagens e frameworks que utilizo</p>
                 <div class="card2">
-                    <h3>Front-End</h3>
-                    <p>Angular · JavaScript · TypeScript · HTML · CSS</p>
+                    <h3>Front-End: </h3>
+                    <div class="imgs2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                    </div>
                 </div>
                 <div class="card2">
-                    <h3>Back-End</h3>
-                    <p>Python · Django · C# · ASP.NET · MySQL · MongoDB</p>
+                    <h3>Back-End:</h3>
+                    <div class="imgs2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"/>
+
+                    </div>
                 </div>
             </div>
         </div>
