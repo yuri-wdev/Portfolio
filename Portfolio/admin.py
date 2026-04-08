@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Slide
 
-# Register your models here.
+@admin.register(Slide)
+class SlideAdmin(admin.ModelAdmin):
+    list_display = ('titulo', 'ordem', 'ativo')
+    list_editable = ('ordem', 'ativo')

@@ -20,6 +20,8 @@ from Portfolio import views
 from Portfolio.views import Sobre
 from Portfolio.views import Contato
 from Portfolio.views import Projetos
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -27,4 +29,5 @@ urlpatterns = [
     path('', Sobre, name='Sobre'),
     path('contato/', Contato, name='Contato'),
     path('projetos/', Projetos, name='Projetos'),
-]
+    
+]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

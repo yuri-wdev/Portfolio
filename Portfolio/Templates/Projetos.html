@@ -86,7 +86,9 @@
 
         </section>
 
-        <section id="informacoes">
+        {% for slide in slides %}
+
+        <section class="slide" id="informacoes">
 
             <div class="contorno_titulo" >
 
@@ -94,24 +96,23 @@
 
                     <button>
                         <</button>
-                            <p>Projeto 1 - Nome do projeto</p>
+                            <p>{{slide.titulo}}</p>
                             <button>></button>
-
                 </div>
             </div>
 
             </div>
             <div class="contorno_descricao">
 
-                <div class="cor_interna2">descricao breve</div>
+                <div class="cor_interna2">{{slide.descricao}}</div>
 
             </div>
 
             <div class="contorno_foto">
-                <img src="/Img/331288b95385a32cae23c50156c5ce62.jpg" id="foto">
+                <img src="{{slide.imagem.url}}" id="foto">
                 <button id="ver_mais">+</button>
             </div>
-
+            {% endfor %}
         </section>
     </main>
 </body>
