@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 
 }
 
@@ -419,14 +420,10 @@ body {
     position: fixed;
     inset: 0;
     display: flex;
-    width: 65dvw;
-    height: 70dvh;
     align-items: center;
     justify-content: center;
     padding: 1rem;
     animation: fadeIn 0.25s ease;
-    align-self: center;
-    justify-self: center;
 }
 
 @keyframes fadeIn {
